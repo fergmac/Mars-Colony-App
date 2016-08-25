@@ -1,0 +1,54 @@
+.report-container {
+	height: 100vh;
+	background: black;
+	font-family: 'Montserrat', sans-serif;
+}
+h1 {
+	margin: 0;
+}
+.report-header {
+	padding-top: 5px;
+	color: grey;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.report-form {
+	padding: 1% 1%;
+	margin: 20px 5px;
+	display: flex;
+	flex-flow: column nowrap;
+
+}
+
+.alien-type {
+	font-size: 16px;
+	margin: 0 5px;
+	margin-bottom: 10px;
+	background: black;
+	border: none;
+	padding: 10px 0;
+	color: #ed4343;
+	background: black;
+	-webkit-appearance: none;
+	line-height: 2rem;
+	border-bottom: 2px solid grey;
+	border-radius: 0%;
+}
+::-webkit-input-placeholder {
+	color: #ed4343;
+}
+.report-text {
+	font-size: 16px;
+	padding: 5px 5px;
+}
+.submit-report-text {
+	margin-top: 50px;
+	text-align: center;
+	text-decoration: none;
+	color: grey;
+}
+
+

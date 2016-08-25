@@ -1,0 +1,63 @@
+
+.mars-container {
+	height: 100vh;
+	background: url('http://scienceblogs.com/startswithabang/files/2013/11/Mars_atmosphere.jpg')no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-flow: column nowrap;
+	text-align: center;
+
+}
+
+.mars-title {
+	
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	text-transform: uppercase;
+
+}
+
+.mars-div-wrapper {
+
+}
+
+.mars-button {
+	background: rgba(237,237,237,.2);
+	opacity: .1;
+	margin: 15% 0;
+	align-self: center;
+	width: 100px;
+ 	height: 100px;
+	border-radius: 50%; 
+	cursor: pointer;
+	box-shadow: 0px 0px 10px 20px rgba(237,237,237,.2);
+	-webkit-animation: border-pulse 3s ease infinite;
+}
+
+
+
+@keyframes border-pulse {
+  
+  0% {
+  	box-shadow: 0px 0px 10px 10px rgba(237,237,237,.2), 0px 0px 10px 25px red, 0px 0px 10px 40px yellow;
+  }
+  15% {
+	box-shadow: 0px 0px 10px 30px rgba(237,237,237,.2), 0px 0px 10px 65px red, 0px 0px 10px 80px yellow;
+  }
+  50% {
+  	box-shadow: 0px 0px 10px 20px rgba(237,237,237,.2), 0px 0px 10px 45px red, 0px 0px 10px 60px yellow;
+  }
+  80% {
+  	box-shadow: 0px 0px 10px 10px rgba(237,237,237,.2), 0px 0px 10px 30px red, 0px 0px 10px 50px yellow;
+  }
+  100% {
+  	box-shadow: 0px 0px 10px 5px rgba(237,237,237,.2), 0px 0px 10px 25px red, 0px 0px 10px 40px yellow;
+  }
+	
+}
+
+.mars-text {
+	font-size: 18px;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
