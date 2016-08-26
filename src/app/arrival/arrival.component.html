@@ -1,26 +1,35 @@
-	<div class="register-container">
 	
-	<h1 class="page-heading">Register</h1>
+	<div class="register-container">
+
+		<h1 class="page-heading">Register</h1>
 		
 		<div class="form-box">	
-				<input type="text" class="name-input" placeholder="Name">
-			
-			
-				<input type="number" class="age-input" placeholder="Age">
-			
-		
-			<select name="Occupation" class="occupation-select" >
-			<option value="" disabled>Select occupation</option>
-			<option value="">Dust Farmer</option>
-			<option value="">Alien Hunter</option>
-			<option value="">Battery Technician</option>
-			<option value="">Yoga Teacher</option>
-			<option value="">Front-end Developer</option>
 
-			</select>
-		</div>	
-		<div class="check-in-button">
-			<a [routerLink]="['/encounters']">Check In</a>
+		<form (ngSubmit)="onSubmit()" name="arrivalForm" #arrivalForm="ngForm">
+			<fieldset>
+				<input [(ngModel)]="colonist.name" name="name" type="text" class="name-input" placeholder="Name" required>
+
+
+				<input [(ngModel)]="colonist.age" name="age" type="number" class="age-input" placeholder="Age" required>
+
+				<div class="custom-select">
+						<select [(ngModel)]="colonist.job_id" name="job_id" class="occupation-select" >
+							<option value="(none)">Select occupation</option>
+							<option *ngFor="let o of occupations" [value]="o.id">{{o.name}}</option>
+					</select>
+				</div>
+			</fieldset>
+
+
+					
+				<!-- <div class="check-in-button">
+					<a [routerLink]="['/encounters']">Check In</a>
+				</div> -->
+			
+				<fieldset>
+            			<button [disabled]="noOccupation || !arrivalForm.form.valid" type="submit">Check In</button>
+    			</fieldset>
+				
+			</form>
 		</div>
-
-</div>
+	</div>
