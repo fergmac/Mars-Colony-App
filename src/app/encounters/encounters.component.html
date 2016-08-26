@@ -5,10 +5,10 @@
 	</div>
 <div>
 	<ul class="encounters-list">
-		<li class="encounter"></li>
-		<li class="encounter"></li>
-		<li class="encounter"></li>
-		<li class="encounter"></li>
+		<li class="encounter-alien" *ngFor="let e of encounters">{{e.date}} - {{e.atype}} <br> {{e.action}} </li>
+		
+		
+		
 	</ul>
 
 </div>

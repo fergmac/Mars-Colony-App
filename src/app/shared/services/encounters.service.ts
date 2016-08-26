@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { IEncounters } from '../models';
+import { Encounter } from '../models';
 import { Http, Headers } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 
@@ -9,26 +9,26 @@ export class EncounterService {
 
 	constructor(private http: Http) {}
 
-	// getEncounters(): Promise<IEncounters[]> {
-	// return this.http.get(this.encountersUrl)
-	// 				.toPromise()
-	// 				.then( response => response.json().encounters)
-	// 				.catch(this.handleError);
+	getEncounter(): Promise<Encounter[]> {
+	return this.http.get(this.encountersUrl)
+					.toPromise()
+					.then( response => response.json().encounters)
+					.catch(this.handleError);
 	
-	// }
+	}
 
-	newEncounter(colonist: IEncounters): Promise<IEncounters> {
+	newEncounter(encounter: Encounter): Promise<Encounter> {
     let headers = new Headers({'Content-Type': 'application/json'});
-    let body = JSON.stringify({ colonist });
+    let body = JSON.stringify({ encounter });
     return this.http
                .post(this.encountersUrl, body, { headers: headers })
                .toPromise()
-               .then(response => response.json().colonist)
+               .then(response => response.json().encounter)
                .catch(this.handleError);
 }
 
 	private handleError(error: any) {
-		console.error('An error occurred', error);
+		// console.error('An error occurred', error);
 		return Promise.reject(error.message || error );
 	}
 

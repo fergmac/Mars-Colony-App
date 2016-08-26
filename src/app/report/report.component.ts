@@ -35,19 +35,19 @@ export class ReportComponent implements OnInit {
   		 }
 
     onSubmit() {
-      // this.colonistService.newColonist(this.colonist).then(colonist => {
-      //   this.router.navigate(['/encounters']);
+      this.encounterService.newEncounter(this.encounter).then(encounter => {
+        this.router.navigate(['/encounters']);
 
-      // }).catch(error => {
-      //   // TODO: handle error
-      //   this.SERVER_ERROR = 'There was an error processing the colonist.';
-      // });
+      }).catch(error => {
+        // TODO: handle error
+        this.SERVER_ERROR = 'There was an error processing the encounter.';
+      });
     }
 
 
-    // get noAlien() {
-    //   return this.encounters.atype === this.NO_ALIEN_SELECTED;
-    // }
+    get noEncounter() {
+      return this.encounter.atype === this.NO_ALIEN_SELECTED;
+    }
 
   ngOnInit() {
   }
