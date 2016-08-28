@@ -7,16 +7,14 @@
 		<fieldset>
 		<div class="report-form">
 			<select [(ngModel)]="encounter.atype"  name="atype" class="alien-type" >		
-				<option value="(none)">Select alien type</option>
+				<option value="">Select alien type</option>
 				<option *ngFor="let a of aliens" [value]="a.type">{{a.type}} </option>
 
 			</select>
 			<textarea [(ngModel)]="encounter.action" name="action" class="report-text" placeholder="Action taken"  rows="10"></textarea>
 
-			<!-- <a class="submit-report-text"[routerLink]="['/encounters']">Submit Report</a> -->
-
-			<fieldset>
-    			<button [disabled]="noEncounter || !alienForm.form.valid" type="submit">Submit Report</button>
+			<fieldset class="form-submit">
+    			<button class="submit-report-text" [disabled]="noEncounter || !alienForm.form.valid" type="submit">Submit Report</button>
     		</fieldset>
 				
 		</div>

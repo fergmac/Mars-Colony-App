@@ -1,10 +1,12 @@
 .register-container {
+	padding-top: 12%;
 	height: 100vh;
 	background: black;
 	color:  grey;
 	font-family: 'Montserrat', sans-serif;
 }
 .page-heading {
+	font-size: 24px;
 	text-align: center;
 }
 .form-box {
@@ -18,11 +20,11 @@
 .name-input,
 .age-input, 
 .occupation-select {
+	width: 100%;
 	margin: 5px 0;
 	padding: 10px 0;
 	color: #ed4343;
 	background: black;
-	text-transform: uppercase;
 	border: none;
 	border-bottom: 2px solid grey;
 	-webkit-appearance: none;
@@ -30,19 +32,25 @@
 	border-radius: 0%;
 
 }
-.check-in-button a{
-	text-decoration: none;
-	color: grey;
-	display: flex;
-	justify-content: center;
-
-
-}
 
 ::-webkit-input-placeholder {
 	color: #ed4343;
 
 }
+
+.check-in-button {
+	font-size: 20px;
+	width: 100%;
+	margin: 0 auto;
+	text-decoration: none;
+	color: grey;
+	border: none;
+	background: none;
+
+
+}
+
+
 
 
 

@@ -3,10 +3,9 @@
 
 		<h1 class="page-heading">Register</h1>
 		
-		<div class="form-box">	
-
+			
 		<form (ngSubmit)="onSubmit()" name="arrivalForm" #arrivalForm="ngForm">
-			<fieldset>
+			<fieldset class="form-box">
 				<input [(ngModel)]="colonist.name" name="name" type="text" class="name-input" placeholder="Name" required>
 
 
@@ -19,17 +18,10 @@
 					</select>
 				</div>
 			</fieldset>
-
-
-					
-				<!-- <div class="check-in-button">
-					<a [routerLink]="['/encounters']">Check In</a>
-				</div> -->
 			
-				<fieldset>
-            			<button [disabled]="noOccupation || !arrivalForm.form.valid" type="submit">Check In</button>
-    			</fieldset>
-				
-			</form>
-		</div>
+			<fieldset class="button-wrapper">
+        			<button [disabled]="noOccupation || !arrivalForm.form.valid" type="submit" class="check-in-button">Check In</button>
+			</fieldset>
+		</form>
+			
 	</div>
