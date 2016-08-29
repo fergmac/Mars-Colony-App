@@ -29,3 +29,7 @@ Run `ng github-pages:deploy` to deploy to Github Pages.
 ## Further help
 
 To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Summary
+
+I found this project to be very interesting, and challenging at the same time. I'm really interested in wrhat we were able to do using angular js. I'd like to keep trying to make web apps like the Mars Colony App. I struggled approaching the stretch goals but I think if i can find a classmate to work with closely during portfolio week i will be able to implement them. 
