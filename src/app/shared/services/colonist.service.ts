@@ -9,13 +9,13 @@ export class ColonistService {
 
 	constructor(private http: Http) {}
 
-	// getColonist(): Promise<IColonist[]> {
-	// 	return this.http.get(this.colonistUrl)
-	// 					.toPromise()
-	// 					.then( response => response.json().colonists)
-	// 					.catch(this.handleError);
+	getColonist(): Promise<Colonist[]> {
+		return this.http.get(this.colonistUrl)
+						.toPromise()
+						.then( response => response.json().colonists)
+						.catch(this.handleError);
 
-	// }
+	}
 
 	newColonist(colonist: Colonist): Promise<Colonist> {
     let headers = new Headers({'Content-Type': 'application/json'});

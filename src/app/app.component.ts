@@ -15,14 +15,8 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
 })
 export class AppComponent {
 
-
-
-	constructor(alienService: AlienService, colonistService: ColonistService, encounterService: EncounterService, occupationService: OccupationService ){
-  			console.log(alienService);
-  			console.log(colonistService);
-  			console.log(encounterService);
-  			console.log(occupationService);
-
+	constructor(alienService: AlienService, colonistService: ColonistService, encounterService: EncounterService, occupationService: OccupationService){
+    
   }
 
 }

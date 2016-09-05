@@ -36,3 +36,4 @@ export class Colonist {
 	public job_id: string
 	) {}
 }
+

@@ -22,6 +22,7 @@ const appRoutes: Routes = [
 		path: 'report',
 		component: ReportComponent
 	},
+	
 ];
 
 export const appRoutingProviders: any[] = [

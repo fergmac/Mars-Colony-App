@@ -14,7 +14,7 @@ import { Router } from '@angular/router';
 export class ArrivalComponent implements OnInit {
 
 	NO_OCCUPATION_SELECTED = '(none)';
-  SERVER_ERROR = '';
+  SERVER_ERROR: string;
 
 
 	public occupations: IOccupation[];
@@ -35,8 +35,9 @@ export class ArrivalComponent implements OnInit {
 
     onSubmit() {
       this.colonistService.newColonist(this.colonist).then(colonist => {
-        this.router.navigate(['/encounters']);
 
+        this.router.navigate(['/encounters']);
+         
       }).catch(error => {
         // TODO: handle error
         this.SERVER_ERROR = 'There was an error processing the colonist.';

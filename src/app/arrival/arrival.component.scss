@@ -2,7 +2,7 @@
 	padding-top: 12%;
 	height: 100vh;
 	background: black;
-	color:  grey;
+	color: gray;
 	font-family: 'Montserrat', sans-serif;
 }
 .page-heading {
@@ -17,23 +17,38 @@
 	border: none;
 }
 
+
 .name-input,
 .age-input, 
 .occupation-select {
+	
 	font-size: 18px;
 	width: 100%;
 	margin: 5px 0;
-	padding: 10px 0;
+	padding: 10px 5px;
 	color: #ed4343;
 	background: black;
 	border: none;
-	border-bottom: 2px solid grey;
+	border-bottom: 2px solid gray;
 	-webkit-appearance: none;
 	line-height: 2rem;
 	border-radius: 0%;
-
+	// &:focus {
+	// outline: solid;
+	// animation: pulse 1s ease-in-out infinite;
+	// }
 
 }
+
+// @-webkit-keyframes pulse {
+//     0% { border: 2px; opacity: 0.0}
+   
+//     40% { border: 2.5px; opacity: .80 } 
+   
+//     80% { border: 3px;  opacity: .40}
+   
+//     100% { border: 2px;  opacity: 0.0}
+//  }
 
 ::-webkit-input-placeholder {
 	color: #ed4343;
@@ -45,10 +60,10 @@
 	width: 100%;
 	margin: 0 auto;
 	text-decoration: none;
-	color: grey;
+	color: gray;
 	border: none;
 	background: none;
-
+	outline: none;
 
 }
 

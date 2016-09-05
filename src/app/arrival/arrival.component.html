@@ -3,18 +3,24 @@
 
 		<h1 class="page-heading">Register</h1>
 		
-			
 		<form (ngSubmit)="onSubmit()" name="arrivalForm" #arrivalForm="ngForm">
 			<fieldset class="form-box">
-				<input [(ngModel)]="colonist.name" name="name" type="text" class="name-input" placeholder="Name" required>
-
-
-				<input [(ngModel)]="colonist.age" name="age" type="number" class="age-input" placeholder="Age" required>
+				<input [(ngModel)]="colonist.name" name="name" type="text" class="name-input" placeholder="Name" required  #name="ngModel">
+				  <div [hidden]="name.valid || name.pristine" 
+             class="alert alert-danger">
+          Name is required
+        </div>
+				<input [(ngModel)]="colonist.age" name="age" type="number" class="age-input" placeholder="Age" required  #age="ngModel">
+				<div [hidden]="age.valid || age.pristine" class="alert alert-danger">
+         		 Age is required
+        		</div>
 
 				<div class="custom-select">
-						<select [(ngModel)]="colonist.job_id" name="job_id" class="occupation-select" >
+						<select [(ngModel)]="colonist.job_id" name="job_id" class="occupation-select">
+
 							<option value="(none)">Select occupation</option>
 							<option *ngFor="let o of occupations" [value]="o.id">{{o.name}}</option>
+							
 					</select>
 				</div>
 			</fieldset>
