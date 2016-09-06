@@ -1,35 +1,18 @@
-# MarsColonyApp
+![Alt text](./screenshots/mars.png)
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.10.
+# Mars Colony App
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Created a web-based application for Earth colonists exploring Mars using Angular 2.
 
-## Code scaffolding
+- Implemented GET and POST HTTP requests using Angular’s HTTP service
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/route/class`.
+- Created aesthetically-relevant styles to build out a “Mars” theme for the app
 
-## Build
+- Implemented the Angular 2 Router
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+- Implemented ngForm and validate user input, and prevent forms from sending invalid API requests
 
-## Running unit tests
+- Implemented the following Angular built-in directives: ngFor, ngIf, ngClass, and ngModel
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Implement the OnInit Class interface
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/). 
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to Github Pages
-
-Run `ng github-pages:deploy` to deploy to Github Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-## Summary
-
-I found this project to be very interesting, and challenging at the same time. I'm really interested in wrhat we were able to do using angular js. I'd like to keep trying to make web apps like the Mars Colony App. I struggled approaching the stretch goals but I think if i can find a classmate to work with closely during portfolio week i will be able to implement them. 
